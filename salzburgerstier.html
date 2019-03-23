@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salzburger Stier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+        <div id="close"><i id="icon-close" onclick="off()"></i></div>
+        <div id="open"><i id="icon-menu" onclick="on()"></i></div>
+
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1>Salzburger Stier</h1>
+        </div>
+        <div class="column_projekt">
+            <img src="images/salzburgerstier_01.jpg" alt="">
+            <img src="images/salzburgerstier_02.jpg" alt="">
+            <img src="images/salzburgerstier_03.jpg" alt="">
+            <img src="images/salzburgerstier_04.jpg" alt="">
+            <div class="video-wrapper" style="background-color:#dfe3e6;">
+                <video class="video" autoplay loop muted poster="images/salzburgerstier_videostill.jpg">
+                    <source src="media/salzburgerstier_bearbeitet.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-info">
+                <h2>
+                    Redesign der Salzburger Stier Website 
+                </h2>
+                <p>Der Salzburger Stier ist der renommierteste Kleinkunstpreis im deutschen Sprachraum. Benannt ist er nach der gleichnamigen Legende einer Belagerung der Festung Hohensalzburg. Im Rahmen eines dreitägigen Festivals werden dabei prominenten etablierten Künstlern aus Kleinkunst und Kabarett vorgestellt. Hinter dem Salzburger Stier stehen die öffentlich-rechtlichen Radiostationen in Deutschland, in Österreich, der Schweiz und in Südtirol.</p>
+                <p> Hinter dem Salzburger Stier stehen die öffentlich-rechtlichen Radiostationen in Deutschland, in Österreich, der Schweiz und in Südtirol.</p>
+                <h3>
+                    Leistungen
+                </h3>
+                <p>
+                    Visual und Interaction Design<br>
+                    Responsive Design<br>
+                    Konzept<br>
+                    Visuelle QA
+                </p>
+                <p><a class="websitelink" href="https://www.salzburgerstier.org/" target="_blank">Zur Website</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="stenna.html" target="_self">Next</a><br>
+    </section>
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+    </script>
+
+</body>
+
+</html>

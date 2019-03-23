@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <div id="open">
+            <div id="icon-menu" onclick="on()"></div>
+        </div>
+        <div id="close">
+            <div id="icon-close" onclick="off()"></div>
+        </div>
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1> Interessiert? <br>Dann sollten wir uns kennenlernen.</h1>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="mailto:englern@web.de">E-Mail</a>
+    </section>
+
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+
+    </script>
+</body>
+
+</html>

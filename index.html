@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <div id="open"><div id="icon-menu" onclick="on()"></div></div>
+        <div id="close"><div id="icon-close" onclick="off()"></div></div>
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1> Hi, ich bin Nadine und arbeite als Visual- &amp; Interactiondesignerin in Zürich</h1>
+        </div>
+        <div class="row">
+            <div class="column leftcolumn">
+                <div class="box mobile-box">
+                    <a href="vzo.html" class="boxlink">
+                        <img src="images/home_vzo.jpg" alt="" class="breite_1">
+                        <div class="overlay breite_1">
+                            <div class="table-cell-wrapper">
+                                <h4>VZO</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box mobile-box">
+                    <a href="stenna.html" class="boxlink">
+                        <img src="images/home_stenna.jpg" alt="" class="breite_2">
+                        <div class="overlay breite_2">
+                            <div class="table-cell-wrapper">
+                                <h4>Stenna Selva</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column rightcolumn">
+                <div class="box mobile-box">
+                    <a href="salzburgerstier.html" class="boxlink">
+                        <img src="images/home_salzburgerstier.jpg" alt="" class="breite_3">
+                        <div class="overlay breite_3">
+                            <div class="table-cell-wrapper">
+                                <h4>Salzburger Stier</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box mobile-box">
+                    <a href="keystone_portal.html" class="boxlink">
+                        <img src="images/home_keystone.jpg" alt="" class="breite_4">
+                        <div class="overlay breite_4">
+                            <div class="table-cell-wrapper">
+                                <h4>Keystone SDA Bildportal</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column leftcolumn">
+                <div class="box mobile-box">
+                    <a href="keystone_public.html" class="boxlink">
+                        <img src="images/home_keystone.jpg" alt="" class="breite_5">
+                        <div class="overlay breite_5">
+                            <div class="table-cell-wrapper">
+                                <h4>Keystone SDA Public Website</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box mobile-box">
+                    <a href="casinotheater.html" class="boxlink">
+                        <img src="images/home_casinotheater.jpg" alt="" class="breite_6">
+                        <div class="overlay breite_6">
+                            <div class="table-cell-wrapper">
+                                <h4>Casinotheater Winterthur</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column rightcolumn">
+                <div class="box mobile-box">
+                    <a href="kraftwerk.html" class="boxlink">
+                        <img src="images/home_kraftwerk.jpg" alt="" class="breite_7">
+                        <div class="overlay breite_7">
+                            <div class="table-cell-wrapper">
+                                <h4>Kraftwerk Tools</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="box mobile-box">
+                    <a href="willichauch.html" class="boxlink">
+                        <img src="images/home_willichauch.jpg" alt="" class="breite_8">
+                        <div class="overlay breite_8">
+                            <div class="table-cell-wrapper">
+                                <h4>VZO<br>Will ich auch</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="kontakt.html">Get in touch</a>
+    </section>
+
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <div id="open"><i id="icon-menu" onclick="on()"></i></div>
+        <div id="close"><i id="icon-close" onclick="off()"></i></div>
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1> Kraftwerk Tools</h1>
+        </div>
+        <div class="column_projekt">
+            <img src="images/kraftwerk_01.jpg" alt="">
+            <img src="images/kraftwerk_02.jpg" alt="">
+            <img src="images/kraftwerk_03.jpg" alt="">
+            <img src="images/kraftwerk_04.jpg" alt="">
+            <div class="video-wrapper" style="background-color:#dfe3e6;">
+                <video class="video" autoplay loop muted poster="images/kraftwerk_videostill.jpg">
+                    <source src="media/kraftwerk_05.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-info">
+                <h2>
+                    Redesign der Kraftwerk Tools Website </h2>
+                <p>Kraftwerk wurde bereits 1979 gegründet. Die Marke geniesst einen hohen Bekanntheitsgrad in Europa. Die Haupttätigkeiten sind Design, Entwicklung, Produktion, Marketing und der Vertrieb von qualitativ hochwertigen Werkzeugen.
+
+                    Im Zuge des Rebranding und der Neuausrichtung der Marke in 2017 stand auch die Überarbeitung der Website an.
+                    Diese tritt bewusst emotionaler auf. Videos und attraktives Bildmaterial aus der Werkstatt unterstreichen die neue Brandstory.
+
+                    Da die Werkzeuge speziell für den harten industriellen und handwerklichen Einsatz gefertigt sind sollte das Design zwar modern und aufgeräumt allerdings nicht steril wirken.
+                    Um die neue Markenbotschaft "My favorite Tool" zu transportieren hatte ich die Idee zu einem Produktteaser bei dem Kraftwerkmitarbeiter ihr Lieblingstool vorstellen.</p>
+                <h3>
+                    Leistungen
+                </h3>
+                <p>
+                    Visual und Interaction Design<br>
+                    Responsive Design<br>
+                    Feinkonzept<br>
+                    Visuelle QA
+                </p>
+                <p><a class="websitelink" href="http://www.kraftwerk.ch" target="_blank">Zur Website</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="willichauch.html" target="_self">Next</a>
+    </section>
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will ich auch</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+        <div id="close"><i id="icon-close" onclick="off()"></i></div>
+        <div id="open"><i id="icon-menu" onclick="on()"></i></div>
+
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1>VZO<br>Will ich auch</h1>
+        </div>
+        <div class="column_projekt">
+            <img src="images/willichauch_01.jpg" alt="">
+            <img src="images/willichauch_02.jpg" alt="">
+            <img src="images/willichauch_03.jpg" alt="">
+            <img src="images/willichauch_04.jpg" alt="">
+            <div class="video-wrapper" style="background-color:#dfe3e6;">
+                <video class="video_smartphone" autoplay loop muted poster="images/willichauch_videostill.jpg">
+                    <source src="media/willichauch.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="project-info">
+                <h2>
+                    Recruiting-App </h2>
+                <p>Die Verkehrsbetriebe Zürichsee und Oberland suchen Buschauffeure und -chauffeusen und haben einiges zu bieten.
+                    In Anlehnung an die bekannten Dating App Tinder wurden alle Vorteile von denen die Angestellten der VZO profitieren erlebbar gemacht.
+                    Besucher können sich so spielerisch von den Vorzügen überzeugen und lernen dabei auch die sympathischen, eventuell zukünftigen Kollegen kennen. Kommt es zum Match kann sich der Nutzer bewerben.</p>
+                <h3>
+                    Leistungen
+                </h3>
+                <p>
+                    Visual und Interaction Design<br>
+                    Responsive Design<br>
+                    Prototyping<br>
+                    Feinkonzept<br>
+                    Visuelle QA
+                </p>
+                <p><a class="websitelink" href="https://willichauch.vzo.ch/" target="_blank">Zur Website</a></p>
+
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="vzo.html" target="_self">Next</a>
+    </section>
+
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+    </script>
+
+</body>
+
+</html>

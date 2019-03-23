@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stenna Selva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+        <div id="close"><i id="icon-close" onclick="off()"></i></div>
+        <div id="open"><i id="icon-menu" onclick="on()"></i></div>
+
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1>Stenna Selva</h1>
+        </div>
+        <div class="column_projekt">
+            <img src="images/stenna_01.jpg" alt="">
+            <img src="images/stenna_02.jpg" alt="">
+            <img src="images/stenna_03.jpg" alt="">
+            <div class="project-info">
+                <h2>
+                    Stenna Selva Website</h2>
+                <p>Stenna Selva sind Eigentumswohnungen in Films, die vom benachbarten Hotel „The Hide“  für einen Zeitraum von 10 Jahren bewirtschaftet werden. Während der Hauptsaison kann man sein Apartment für bis zu 3 Wochen selbst beanspruchen. Ausserhalb dieser Zeit unbeschränkt.</p>
+                <p> Mit Fullscreen-Bildmaterial und einem hochwertiges Design mit viel Weissraum bietet die Website Informationen zu den exklusiven Wohnungen direkt an der Talstation des Flimser Bergparadies. Ein animierter Toggle ermöglicht dazu den Wechsel zwischen Sommer und Winter.</p>
+                <h3>
+                    Leistungen
+                </h3>
+                <p>
+                    Visual und Interaction Design<br>
+                    Responsive Design<br>
+                    Konzept<br>
+                    Visuelle QA
+                </p>
+
+                <p><a class="websitelink" href="http://www.stenna-selva.ch" target="_blank">Zur Website</a></p>
+
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="keystone_portal.html" target="_self">Next</a><br>
+    </section>
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+    </script>
+
+</body>
+
+</html>

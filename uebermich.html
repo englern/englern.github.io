@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <div id="open"><div id="icon-menu" onclick="on()"></div></div>
+        <div id="close"><div id="icon-close" onclick="off()"></div></div>
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1> Hi, ich bin Nadine. <br> Visual- &amp; Interactiondesign sind meine Passion.</h1>
+            <p> Seit ca. 8 Jahren lebe und arbeite ich in Zürich, ursprünglich komme ich hingegen aus dem Rheinland bei Köln. Als begeisterte Taucherin bin ich an den Wochenenden oft an und im Wasser anzutreffen. Zur Zeit bin ich jedoch auch beruflich auf der Suche nach neuen Herausforderungen.</p>
+
+            <h3>
+                Meine tägliche Werkzeuge sind …
+            </h3>
+            <p>
+                Sketch<br>
+                Adobe Photoshop <br>
+                Protopie <br>
+                Zeplin <br>
+                Invision <br>
+                Balsamiq <br>
+                Adobe Illustrator<br>
+            </p>
+
+            <h3>
+                Ausserdem verfüge ich über Kenntnisse in …
+            </h3>
+            <p>
+                Indesign <br>
+                html &amp; css <br>
+                Webflow<br>
+                Final Cut<br>
+                Figma<br>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+
+    </script>
+</body>
+
+</html>

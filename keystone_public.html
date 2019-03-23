@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystone SDA Public Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initial()">
+    <header>
+        <nav class="flex-container">
+            <div><a href="uebermich.html">Über mich</a></div>
+            <div><a href="index.html">Meine Arbeiten</a></div>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <nav id="mobileNav" class="mobile-menu">
+            <div class="menu-head"></div>
+            <div class="menu-entry"><a href="uebermich.html">Über mich</a></div>
+            <div class="menu-entry"><a href="index.html">Meine Arbeiten</a></div>
+            <div class="menu-entry"><a href="kontakt.html">Kontakt</a></div>
+        </nav>
+
+        <div id="open"><i id="icon-menu" onclick="on()"></i></div>
+        <div id="close"><i id="icon-close" onclick="off()"></i></div>
+    </header>
+
+    <section class="wrapper">
+        <div class="main-headline">
+            <h1>Keystone SDA Public Website</h1>
+        </div>
+        <div class="column_projekt">
+            <img src="images/keystone_public_01.jpg" alt="">
+            <img src="images/keystone_public_02.jpg" alt="">
+            <img src="images/keystone_public_03.jpg" alt="">
+            <img src="images/keystone_public_04.jpg" alt="">
+            <div class="project-info">
+                <h2>
+                    Keystone SDA Public Website Relaunch
+                </h2>
+                <p>Keystone SDA ist die einzige komplette nationale Nachrichtenagentur der Schweiz.
+                    Sie bietet tagesaktuelle Meldungen aus Politik, Wirtschaft, Gesellschaft, Kultur und Sport in Form von Text, Bild, Video und Infografik.
+                    Zudem versorgt sie Unternehmen, Behörden und Organisationen mit Nachrichten und Bildern und erstellt auch Fotos im Auftrag von Kunden.
+                </p>
+                <p>
+                    Das helle minimalitische und kontrastreiche Design ist geprägt durch Großzügigkeit und Weissraum und vermittelt ein modernes Look and Feel.
+                    Design und Entwicklung der neue Public Website der Keystone SDA erfolgte parallel zum Relaunch des Bildportals. So konnte ein einheitliches Erscheinungsbild gewährleistet werden.
+                </p>
+                <h3>
+                    Leistungen
+                </h3>
+                <p>
+                    Visual und Interaction Design<br>
+                    Responsive Design<br>
+                    Feinkonzept<br>
+                    Visuelle QA
+                </p>
+                <p><a class="websitelink" href="https://www.keystone-sda.ch/" target="_blank">Website</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="next">
+        <a class="button" href="casinotheater.html" target="_self">Next</a>
+    </section>
+
+    <script>
+        function initial() {
+            document.getElementById("close").style.opacity = "0";
+            document.getElementById("open").style.opacity = "1";
+        }
+
+        function on() {
+            document.getElementById("mobileNav").style.left = "0";
+            document.getElementById("open").style.opacity = "0";
+            document.getElementById("close").style.opacity = "1";
+        }
+
+        function off() {
+            document.getElementById("mobileNav").style.left = "-100%";
+            document.getElementById("open").style.opacity = "1";
+            document.getElementById("close").style.opacity = "0";
+        }
+    </script>
+
+</body>
+
+</html>
