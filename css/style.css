@@ -105,7 +105,6 @@ p {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 7%;
-    background-color: aqua;
 }
 
 .next {
@@ -364,6 +363,13 @@ https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-interne
     a.websitelink:active {
         font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
     }
+    
+    .main-headline {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+    background-color: aqua;
+}
     
     #open {
         position: relative;
