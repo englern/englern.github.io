@@ -363,13 +363,16 @@ https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-interne
     a.websitelink:active {
         font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
     }
-    
+
     .main-headline {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: aqua;
-}
-    
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .project-info {
+        width: 90%;
+    }
+
     #open {
         position: relative;
         transition: 0.2s;
