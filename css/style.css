@@ -365,9 +365,8 @@ https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-interne
     }
     
     .main-headline {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 7%;
+    margin-left: 0;
+    margin-right: 0;
     background-color: aqua;
 }
     
