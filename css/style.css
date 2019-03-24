@@ -358,6 +358,12 @@ https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-interne
         font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
     }
 
+    a.websitelink:link,
+    a.websitelink:visited,
+    a.websitelink:active {
+        font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
+    }
+
     #open {
         position: relative;
         transition: 0.2s;
