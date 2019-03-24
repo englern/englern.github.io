@@ -353,6 +353,10 @@ a.button:hover {
 CSS: Opacity is not inherited in Internet Explorer
 https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-internet-explorer*/
 
+    p,
+    h3 {
+        font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
+    }
 
     #open {
         position: relative;
