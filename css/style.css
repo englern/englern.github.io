@@ -354,7 +354,7 @@ CSS: Opacity is not inherited in Internet Explorer
 https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-internet-explorer*/
 
     h1 {
-        font-size: calc(1.875rem + ((1vw - 4.8px) * 0.6944));
+            font-size: calc(2.1875rem + ((1vw - 4.8px) * 0.6944));
     }
 
     p,
