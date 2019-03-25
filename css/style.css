@@ -99,6 +99,7 @@ p {
 
 .wrapper {
     margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .main-headline {
@@ -342,7 +343,7 @@ a.button:hover {
 
 .project-info {
     width: 80%;
-    margin: 7vw auto 0 auto;
+    margin: 7vw auto -5% auto;
 }
 
 /* Wenn Viewport <700px verstecke Navi, zeige Hamburger - Icon*/
