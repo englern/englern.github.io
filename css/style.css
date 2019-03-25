@@ -67,7 +67,7 @@ h2 {
 }
 
 h1 {
-    font-size: 7vmin;
+    font-size: calc(2.8125rem + ((1vw - 4.8px) * 1.3889));
 }
 
 h2 {
@@ -353,8 +353,11 @@ a.button:hover {
 CSS: Opacity is not inherited in Internet Explorer
 https://makandracards.com/makandra/21779-css-opacity-is-not-inherited-in-internet-explorer*/
 
+    h1 {
+        font-size: calc(1.875rem + ((1vw - 4.8px) * 0.6944));
+    }
+
     p,
-    h2,
     h3 {
         font-size: calc(1.25rem + ((1vw - 4.8px) * 1.5278));
     }
