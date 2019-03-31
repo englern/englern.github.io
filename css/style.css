@@ -43,15 +43,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ITC Grouch';
-    src: url('../fonts/ITC Grouch.eot');
-    src: url('../fonts/ITC Grouch.eot') format('embedded-opentype'),
-        url('../fonts/ITC Grouch.woff2') format('woff2'),
-        url('../fonts/ITC Grouch.woff') format('woff'),
-        url('../fonts/ITC Grouch.ttf') format('truetype'),
-        url('../fonts/ITC Grouch.svg#ITC Grouch') format('svg');
-}
 
 body {
     background-color: #fff;
@@ -120,6 +111,17 @@ p {
     height: 90px;
     margin: 2%;
     margin-top: 10%;
+}
+
+.social_logo{
+    text-align: center;
+
+}
+.social_logo img {
+     width: 60px;
+    height: 60px;
+    margin: 1%;
+    margin-bottom: 5%;
 }
 
 
